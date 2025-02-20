@@ -2,14 +2,13 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "sekolah";
+$db   = "sekolah";
 
-// Membuat Koneksi ke Databases
+// Membuat koneksi ke database
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 
-// cek koneksi
-if(!$koneksi){
-    die("Koneksi gagal : ". mysqli_connect_error());
+// Cek koneksi
+if (!$koneksi) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
-
 ?>
